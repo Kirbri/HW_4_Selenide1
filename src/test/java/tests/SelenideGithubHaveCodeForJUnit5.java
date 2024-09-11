@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class selenideGithubHaveCodeForJUnit5 {
+public class SelenideGithubHaveCodeForJUnit5 {
     @BeforeAll
     static void beforeAll() {
         Configuration.pageLoadStrategy = "eager";
