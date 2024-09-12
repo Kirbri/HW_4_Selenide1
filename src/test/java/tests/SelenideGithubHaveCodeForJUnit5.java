@@ -15,7 +15,7 @@ public class SelenideGithubHaveCodeForJUnit5 {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://github.com";
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
     }
 
     @Test
@@ -26,7 +26,7 @@ public class SelenideGithubHaveCodeForJUnit5 {
         $("#wiki-pages-box").shouldHave(text("SoftAssertions"));
         $("#wiki-pages-box").$(byText("SoftAssertions")).click();
         $("#js-repo-pjax-container").shouldHave(text("SoftAssertions"));
-        $("#wiki-body").shouldBe(text("@Listeners({ SoftAsserts.class})\n" +
+        $("#wiki-body").shouldHave(text("@Listeners({ SoftAsserts.class})\n" +
                 "public class Tests {\n" +
                 "  @Test\n" +
                 "  public void test() {\n" +
