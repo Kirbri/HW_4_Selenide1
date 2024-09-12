@@ -22,7 +22,7 @@ public class DragDropTransfer {
     }
 
     @Test
-    void selenideCodeTestWithActions() {
+    void selenideCodeTestWithActionsTest() {
         open("/drag_and_drop");
         $(".example").shouldHave(text("Drag and Drop"));
         SelenideElement element = $("#column-a");
@@ -36,7 +36,7 @@ public class DragDropTransfer {
     }
 
     @Test
-    void selenideCodeTestWithDragAndDrop() {
+    void selenideCodeTestWithDragAndDropTest() {
         open("/drag_and_drop");
         $(".example").shouldHave(text("Drag and Drop"));
         $("#column-a").dragAndDrop(to($("#column-b")));
