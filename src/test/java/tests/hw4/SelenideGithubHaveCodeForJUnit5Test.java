@@ -1,4 +1,4 @@
-package tests.HW4;
+package tests.hw4;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class SelenideGithubHaveCodeForJUnit5 {
+public class SelenideGithubHaveCodeForJUnit5Test {
     @BeforeAll
     static void beforeAll() {
         Configuration.pageLoadStrategy = "eager";
